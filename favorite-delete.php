@@ -1,5 +1,5 @@
 <?php session_start();?>
-<?php require '../header.php'; ?>
+<?php require 'header.php'; ?>
 <?php require 'menu.php';?>
 <?php
 if (isset($_SESSION['customer'])) {
@@ -13,4 +13,4 @@ if (isset($_SESSION['customer'])) {
   }
   require 'favorite.php';
 ?>
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>

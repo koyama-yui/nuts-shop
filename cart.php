@@ -12,8 +12,8 @@ foreach ($_SESSION['product'] as $id=>$product) {
 ?>
 <tr>
 <td><?=$id?></td>
-<td><a href ="detail.php?id= <?=$id?>"> 
-<?=$product['name']?> </a></td>
+<td><a href ="detail.php?id=<?=$id?>"> 
+     <?=$product['name']?></a></td>
 <td><?=$product['price']?></td>
 <td><?=$product['count']?></td>
 
@@ -22,12 +22,12 @@ $subtotal=$product['price']*$product['count'];
 $total+=$subtotal;
 ?>
 <td><?=$subtotal?></td>
-<td><a href ="cart-delete.php?id= <?=$id?>"> 削除 </a></td>
+<td><a href ="cart-delete.php?id=<?=$id?>">削除</a></td>
 </tr>
 <?php } ?>
-<tr><td>合計</td> <td></td> <td></td> <td></td> <td><?=$total?>
-</td><td></td> </tr>
+<tr><td>合計</td> <td></td> <td></td> <td></td> <td><?=$total?></td><td></td></tr>
 </table>
+
  <?php }  
 else {
 echo 'カートに商品がありません。';

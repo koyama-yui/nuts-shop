@@ -1,4 +1,4 @@
-<?php require '../header.php'; ?>
+<?php require 'header.php'; ?>
 <?php require 'menu.php';?>
 
 <form action ="login-output.php" method="post">
@@ -7,4 +7,4 @@
   <input type="submit" value="ログイン">
 </form>
 
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>

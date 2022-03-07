@@ -1,0 +1,103 @@
+
+
+<link rel="stylesheet" href="/nuts-shop/slick/slick.css"/>
+<!-- 追加↓ -->
+<link href="/nuts-shop/slick/slick-theme.css" rel="stylesheet">
+
+
+<style>
+  .slick01,.multiple-item{ 
+    width: 90%; 
+    max-width: 1200px;
+    margin: auto;
+   }
+   .slick-slide img {
+      max-width: 180px;
+    }
+  ul{padding: 0;} 
+  
+  .slick-list{max-height:400px} 
+  .slick-next:before {
+      content: '→';
+  }
+  .slick-prev:before, .slick-next:before {
+      font-family: 'slick';
+      font-size: 20px; line-height: 1;
+      opacity: .75;   color: #000000;
+  }
+  
+  </style>
+
+<!-- 
+  <ul class="slick01">
+    <li><img src="/image/metaslider01.jpg" alt=""></li>
+    <li><img src="/image/metaslider05.png" alt=""></li>
+    <li><img src="/image/metaslider03.jpg" alt=""></li>
+    <li><img src="/image/metaslider04.jpg" alt=""></li>
+  </ul> 
+
+  <h2>こっちがカルーセル</h2>-->
+<section class="multiple-item">
+  <p><img src="/nuts-shop/image/1.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/2.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/3.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/4.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/5.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/6.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/7.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/8.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/9.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/10.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/11.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/12.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/13.jpg" alt=""></p>
+  <p><img src="/nuts-shop/image/14.jpg" alt=""></p>
+</section>
+
+<!--jQuery本体を先に読ませる-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="/nuts-shop/slick/slick.min.js"></script>
+<script>
+
+
+$('.multiple-item').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      swipe:true,
+      touchMove:true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+      ]
+  });
+// $('.slick01').slick({
+ //        autoplay: true, //「オプション名: 値」の形式で書く
+  //    dots: true, //複数書く場合は「,」でつなぐ
+ //     centerMode: true, //前後の画像が見える
+  //    centerPadding: '25%',
+ //     fade		:true
+ // });
+</script>
+
+</body>
+</html>

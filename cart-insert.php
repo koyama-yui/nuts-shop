@@ -1,5 +1,5 @@
 <?php session_start();?>
-<?php require '../header.php'; ?>
+<?php require 'header.php'; ?>
 <?php require 'menu.php';?>
 <?php
 $id=$_REQUEST['id'];
@@ -16,4 +16,4 @@ echo '<p>カートに商品を追加しました。</p>';
 echo '<hr>';
 require 'cart.php';
 ?>
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>
