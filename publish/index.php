@@ -156,7 +156,7 @@ foreach ($sql as $row) {
 <script>
 $(function(){
   $.ajax({
-    url: '/nuts-shop/slick.html',
+    url: '/nuts-shop/publish/slick.html',
     /* スライダーのフルパス */
         dataType: 'html', //受け取るデータの型
     }).done(function(res){
